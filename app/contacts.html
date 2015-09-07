@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Портфолио | Связаться со мной</title>
+    <!-- SEO -->
+    <meta name="description" content="дз по фронтенду">
+    <meta name="keywords" content="портфолио, мой опыт работы">
+    <meta name="author" content="Жильцов Виталий и команда Loftschool">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-con">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- CSS -->
+    <link href="bower/normalize.css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form_elements.css">
+    <link rel="stylesheet" href="css/contacts-me.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--modernizr-->
+    <script src="bower/modernizer/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a>, не мучайте его.Он старенький</p>
+<![endif]-->
+    <div class="wrapper">
+        <div class="content">
+            <!-- Шапка-->
+            <header class="block-header">
+                <div class="container-head">
+                    <a href="./index.html" class="head-logo-link">
+                        <img src="img/logo.png" alt="Logo" class="logo-img">
+                        <span class="head-logo-text">Сайт портфолио</span>
+                    </a>
+                    <ul class="socialbut">
+                        <li class="socialbut-item"><a href="http://vk.com/itkatun" target="blank" class="socialbut-link vk">VKontakte</a></li>
+                        <li class="socialbut-item"><a href="http://twitter.com" target="blank" class="socialbut-link tw">Twitter</a></li>
+                        <li class="socialbut-item"><a href="http://fb.com" target="blank" class="socialbut-link fb">Facebook</a></li>
+                        <li class="socialbut-item"><a href="http://github.com/itkatun/" target="blank" class="socialbut-link gt"> Github</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!-- /Шапка-->
+            <div class="container">
+                <!--Сайдбар-->
+                <aside class="sidebar">
+                    <nav class="navigation-block">
+                        <ul class="navigation-menu">
+                            <li class="navigation-but">
+                                <a href="/" class="navigation-link ">Обо мне</a>
+                            </li>
+                            <li class="navigation-but">
+                                <a href="/myjobs.html" class="navigation-link">Мои работы</a>
+                            </li>
+                            <li class="navigation-but current">
+                                <a href="/contacts.html" class="navigation-link">Связаться со мной</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="contacts">
+                        <ul class="contacts-menu">
+                            <li class="contacts-header">Контакты</li>
+                            <li class="contacts-mail"><a href="mailto:itkatun@gmail.com">itkatun@gmail.com</a></li>
+                            <li class="contacts-phone"><a href="tel:+79069663238">+7(906)9663238</a> </li>
+                            <li class="contacts-skype"><a href="skype:itkatun?call">itkatun</a></li>
+                        </ul>
+                    </address>
+                </aside>
+                <!--Изменяемый контент-->
+				<div class="variable-content">
+                <section class="aboutbox">
+					<div class="header-big-wrap">
+						  <h2 class="aboutbox-header-big">
+                          У вас интересный проект? Напишите мне</h2>
+                         </div>
+					   <div class="aboutbox-body">
+                        <div class="contact-form-wrap">
+				<form id="contact-me" class="form contact-form"> 
+ <div class="server-mes error-mes"></div>
+                    <div class="server-mes success-mes"></div>
+                    <div class="form-line clearfix">
+                      <div class="form-group pull-left">
+<label for="name" class="label">Имя: </label>
+<input type="text" name="name" placeholder="Как к вам обращаться" 
+qtip-content="Вы не ввели имя" class="input">
+ </div>
+ <div class="form-group pull-right">
+<label for="email" class="label">Email: </label>
+<input type="text" name="email" placeholder="Куда мне писать" 
+qtip-position="right" qtip-content="Вы не ввели email" class="input">
+</div>
+</div>
+ <div class="form-group">
+<label for="message" class="label">Сообщение:</label> 
+<textarea id='message' name="message" rows=3 placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?" class="textarea">
+</textarea>
+</div>
+ <div class="form-group captcha-wrap clearfix">
+ <label for="captcha" class="captcha">Введите код, уазанный на картинке</label>
+<img src="img/bg_captcha.jpg" alt="код" class="captcha pull-left">
+<input type="text" name="captcha" placeholder="Введите код" qtip-position="Вы не ввели код" class="input input-captcha pull-right">
+</div>
+<div class="button-group">
+                      <button type="submit" class="btn">Отправить</button>
+                      <button type="reset" class="btn btn-res">Очистить</button>
+                    </div>
+                        </form>
+					   </div>
+					</div>
+                </section>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!--подвал-->
+    <footer class="block-footer">
+        <div class="container">
+            <div class="login">
+                <a href="/login.html" class="login-inner">Войти</a></div>
+            <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+    </footer>
+    <!--/ подвал-->
+    <!--JS-->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

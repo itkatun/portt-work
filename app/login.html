@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Портфолио | Авторизация</title>
+    <!-- SEO -->
+    <meta name="description" content="дз по фронтенду">
+    <meta name="keywords" content="портфолио, мой опыт работы">
+    <meta name="author" content="Жильцов Виталий и команда Loftschool">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-con">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- CSS -->
+    <link href="bower/normalize.css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/form_elements.css">
+    <link rel="stylesheet" href="css/contacts-me.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--modernizr-->
+    <script src="bower/modernizer/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a>, не мучайте его.Он старенький</p>
+<![endif]-->
+    <div class="wrapper">
+        <div class="content">
+            <!--Изменяемый контент-->
+            <div class="login-container">
+                <div class="autorization">
+                    <div class="header-login-wrap">
+                        <h2 class="login-header">Авторизируйтесь</h2>
+                    </div>
+                    <div class="autorization-body">
+                        <form action="/echo" method="post" class="autorization-form">
+                            <div class="server-mes error-mes"></div>
+                            <div class="server-mes success-mes"></div>
+                            <div class="form-line clearfix">
+                                <div class="form-group">
+                                    <label for="name" class="label">Логин: </label>
+                                    <input type="text" name="name" placeholder="Введите логин" qtip-content="Введите логин" class="input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="label">Пароль: </label>
+                                    <input type="text" name="name" placeholder="Введите пароль" qtip-content="Введите пароль" class="input">
+                                </div>
+                                <div class="button-group">
+                                    <button type="submit" class="btn">Войти</button>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+    <!--подвал-->
+    <footer class="block-footer">
+        <div class="container">
+            <div class="login">
+                <a href="/login.html" class="login-inner">Войти</a></div>
+            <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+    </footer>
+    <!--/ подвал-->
+    <!--JS-->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/* Общие стили для секциb мои работы */
+.jobs {
+	width: 100%;
+  padding-bottom: 38px;
+  overflow: hidden;
+  background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+
+}
+.jobs-header{
+	display: inline-block;
+  font-family: 'Fira Sans';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+  line-height: 66px;
+	border-bottom: 2px #3ba8c0 solid;
+	margin-top: 0;
+  margin-bottom: 21px;
+	padding: 0px 21px;
+	}
+
+.jobs-list{	
+    list-style: none;
+    margin: 6px; /* Обнуляем значение отступов */
+    padding: 0;
+
+   }
+.jobs-item{
+    display: inline-block;
+    width: 183px;
+    margin: 0 13px 40px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .jobs-figure {
+    width: 100%;
+    height: 129px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+    border: 2px solid #3ba8c0;
+    border-radius: 4px;
+    box-sizing:border-box;
+     }
+.jobs-item-img_link{
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.jobs-item-img_link:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.jobs-item-img_link:after {
+    opacity: 1;
+    visibility: visible;
+}
+.jobs-item-img_title{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 2px 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0,-400%,0);
+  transition:opacity .5s,visibility .5s,transform .5s;
+}
+.jobs-item-img {      
+  max-width: 100%;
+  transition:transform .5s ease-in;
+ }
+ .jobs-item-img-link{
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  color: #3ba8c0;
+  text-decoration: none;
+ }
+
+ .link-fing{
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 300;
+  color:#4a545d;
+  padding: 0 5px;
+  }
+
+
+   .jobs-item .zoom-wrapper{
+     position:absolute;
+     width: 100%;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     text-align: center;
+     background: rgba(59, 168, 192, 0.5);
+     transform: scale(0);
+     -webkit-transform: scale(0);
+     transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+   }
+   .jobs-item:hover .zoom-wrapper {  
+    transform: scale(1);
+    -webkit-transform: scale(1);
+ }
+   .jobs-item .zoom-link{
+    font-family: 'fira_sansbook';
+    font-size: 12px;
+    border: solid 3px #eff3f7;
+    color: #eff3f7;
+    text-decoration: none;
+    border-radius: 5px; 
+    padding: 0 4px;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+
+   }
+   .jobs-item .project-link{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    text-decoration: none;
+    color: #3ba8c0;
+    font-family: 'fira_sansbook'
+    font-style: italic;
+   }
+   
+  

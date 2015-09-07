@@ -1,0 +1,7 @@
+{
+  "name": "dz-port",
+  "devDependencies": {
+    "browser-sync": "^2.9.1",
+    "gulp": "^3.9.0"
+  }
+}
