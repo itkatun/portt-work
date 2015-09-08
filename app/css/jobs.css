@@ -139,5 +139,21 @@
     font-family: 'fira_sansbook'
     font-style: italic;
    }
-   
-  
+   .jobs-figure-add_new {
+  width: 100%;
+  height: 129px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px dashed #3ba8c0;
+  border-radius: 4px;
+  position: relative;
+  background-color: #edf8fc;
+  box-shadow: 0 0 0 -2px rgba(59, 168, 192, .7);
+}
+.jobs-figure-add_new_link {
+  position: absolute;
+  top: 50px;
+  padding: 0px 4px;
+  text-decoration: none;
+
+  }
