@@ -5,7 +5,7 @@ html {
 body {
     height: 100%;
     background: url(../img/bg.jpg) repeat;
-    font: normal 1em '../fonts/firasans-light.ttf';
+    font: normal 1em './fonts/fira_sanslight';
     color: #4a545d;
 }
 

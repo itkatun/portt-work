@@ -1,27 +1,27 @@
 /* Общие стили для секциb мои работы */
 .jobs {
-	width: 100%;
+  width: 100%;
   padding-bottom: 38px;
   overflow: hidden;
   background: #eff3f7;
-	border-radius: 4px;
-	margin-bottom: 26px;
+  border-radius: 4px;
+  margin-bottom: 26px;
 
 }
 .jobs-header{
-	display: inline-block;
+  display: inline-block;
   font-family: 'Fira Sans';
-	font-size: 27px;
-	font-weight: normal;
-	color: #3ba8c0;
+  font-size: 27px;
+  font-weight: normal;
+  color: #3ba8c0;
   line-height: 66px;
-	border-bottom: 2px #3ba8c0 solid;
-	margin-top: 0;
+  border-bottom: 2px #3ba8c0 solid;
+  margin-top: 0;
   margin-bottom: 21px;
-	padding: 0px 21px;
-	}
+  padding: 0px 21px;
+  }
 
-.jobs-list{	
+.jobs-list{ 
     list-style: none;
     margin: 6px; /* Обнуляем значение отступов */
     padding: 0;
@@ -139,8 +139,11 @@
     font-family: 'fira_sansbook'
     font-style: italic;
    }
-   .jobs-figure-add_new {
-  width: 100%;
+
+   /* _____________ // Существующие проекты и подписи _________ */
+   /* _____________ Добавить проект _________ */
+   .jobs-figure-add_new{
+    width: 100%;
   height: 129px;
   overflow: hidden;
   box-sizing: border-box;
@@ -149,11 +152,62 @@
   position: relative;
   background-color: #edf8fc;
   box-shadow: 0 0 0 -2px rgba(59, 168, 192, .7);
+  display: inline-block;
+   }
+   .jobs-figure-add_new:hover {
+  border-style: solid;
+  box-shadow: 0 0 3px 12px rgba(239, 243, 247, 0);
+  transition: box-shadow .3s;
 }
-.jobs-figure-add_new_link {
+   .jobs-figure-add_new_link{
   position: absolute;
-  top: 50px;
-  padding: 0px 4px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  line-height: 1;
+  color: #3ba8c0;
+  font-weight: 300;
   text-decoration: none;
+  padding-top: 34px;
+   }
+   .jobs-figure-add_new_link:before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 14px;
+  background: url(../img/add-new.png) no-repeat
+}
 
-  }
+
+
+@-webkit-keyframes moveFromBottom {
+  from { -webkit-transform: translateY(200%); opacity: 0;}
+    to { -webkit-transform: translateY(0%) scale(1); opacity: 1;}
+}
+
+@-moz-keyframes moveFromBottom {
+    from { -moz-transform: translateY(200%); opacity: 0;}
+    to { -moz-transform: translateY(0%); opacity: 1;}
+}
+@-ms-keyframes moveFromBottom {
+    from { -ms-transform: translateY(200%); opacity: 0;}
+    to { -ms-transform: translateY(0%); opacity: 1;}
+}
+@-o-keyframes moveFromBottom {
+  from { -o-transform: translateY(200%); opacity: 0;}
+    to { -o-transform: translateY(0%); opacity: 1;}
+}
+@keyframes moveFromBottom {
+  from { transform: translateY(200%); opacity: 0;}
+    to { transform: translateY(0%); opacity: 1;}
+}
+/* _____________ // Добавить проект _________ */
+
+
+/* Прячем модальное окно */
+#new-project-popup { 
+  display:none; 
+}
